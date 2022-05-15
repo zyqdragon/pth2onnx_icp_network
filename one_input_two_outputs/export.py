@@ -4,7 +4,7 @@ import sys
 sys.path.append('../upper_directory')
 
 import new_model
-from func_file import predict_argument_parser, func_setup
+from func_file import func_argument_parser, func_setup
 
 def main(args):
     os.environ["EXPORT_ONNX_MODEL"] = "ON"
@@ -23,5 +23,5 @@ def main(args):
                             output_names=['output_0', 'output_1']
 
 if __name__ == "__main__":
-    args = predict_argument_parser().parse_args()
+    args = func_argument_parser().parse_args()
     main(args)
