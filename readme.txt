@@ -1,9 +1,10 @@
-# 本项目文件阐述如何将pytorch的pth模型转换为onnx模型的例子:
-==
+本项目文件阐述如何将pytorch的pth模型转换为onnx模型的例子:
+===========
 
 包含单输入多输出模型的转换以及多数入单输出的模型转换。
 
-# pth模型的载入和保存代码需要匹配，否则会报如下错误：
+pth模型的载入和保存代码需要匹配，否则会报如下错误：
+--------
 torch.nn.modules.module.ModuleAttributeError: ‘Network‘ object has no attribute ‘copy‘
 
 解决办法
